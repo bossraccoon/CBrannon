@@ -15,8 +15,8 @@ echo 'Hello World' . PHP_EOL;
 //------- Creating, and echoing a 3 dimensional array.
 
 $array3x3 = array(array(1994, 1995, 1996),
-				  array(1997, 1998, 1999),
-				  array(2000, 2001, 1002));
+		  array(1997, 1998, 1999),
+		  array(2000, 2001, 1002));
 				  
 echo '$Array3x3[1][1] = ' . $array3x3[1][1] . PHP_EOL;
 
