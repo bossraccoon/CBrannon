@@ -67,7 +67,6 @@ echo "Nested foreach loop to display the grocery_list array" . PHP_EOL;
 foreach($grocery_list as $label => $department)
 {
 	echo '$department = ' . $label . '<br>' . PHP_EOL;
-	$j++;
 	foreach($department as $item)
 	{
 		echo '$item = ' . $item . '<br>' . PHP_EOL;
@@ -78,7 +77,6 @@ echo "Nested foreach loop to display the grocery_list array after it has been so
 foreach($grocery_list as $label => $department)
 {
 	echo '$department = ' . $label . '<br>' . PHP_EOL;
-	$j++;
 	foreach($department as $item)
 	{
 		echo '$item = ' . $item . '<br>' . PHP_EOL;
