@@ -24,7 +24,7 @@ else
 	echo "It is neither May, nor June." . PHP_EOL;
 
 //-------Rock, Paper, Scissors game
-$handArray = ['Rock', 'Paper', 'Scissors'];
+$handArray = array('Rock', 'Paper', 'Scissors');
 shuffle($handArray);
 $randHand1 = array_rand($handArray);
 $randHand2 = array_rand($handArray);
