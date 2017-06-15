@@ -29,15 +29,17 @@ echo date_format($date, 'Y-m-d H:i:s') . "\n";
 //-------For loops for specifiers applied to $ExampleNumber
 for ($i = 0; $i < count($dataSpecifier); $i++)
     {
-        $greeting = str_replace(["aa" , "bb"], [array_values($dataSpecifier)[$i], array_values($dataText)[$i]], $string);
+        //$greeting = str_replace(["aa" , "bb"], [array_values($dataSpecifier)[$i], array_values($dataText)[$i]], $string);
+        $greeting = str_replace("aa", $dataSpecifier[$i], $string);
+        $greeting = str_replace("bb", $dataText[$i], $greeting);
         $text_contents .= sprintf($greeting . "\n", $ExampleNumber);
-        echo sprintf($greeting, $ExampleNumber) . '<br>' . PHP_EOL;
+        //echo sprintf($greeting, $ExampleNumber) . '<br>' . PHP_EOL;
     }
 for ($i = 0; $i < 6; $i++)
     {
         $greeting = str_replace(["aa" , "bb"], [("'$%010." . $i . "f'"), ($i . " decimal precision")], $string);
         $text_contents .= sprintf($greeting . "\n", $ExampleNumber);
-        echo sprintf($greeting, $ExampleNumber) . '<br>' . PHP_EOL;
+        //echo sprintf($greeting, $ExampleNumber) . '<br>' . PHP_EOL;
     }
 
 //-------Three formats for displaying dates
